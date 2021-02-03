@@ -72,29 +72,13 @@ delay(2000);
     if(Serial.read() == '\n'){              // if the last byte is 'd' then stop reading and execute command 'd' stands for 'done'
         Serial.flush();                     //clear all other commands piled in the buffer
         Serial.print('d');                   //send completion of the command
-
-    
-     
       lcd.setCursor(0, 0);
       lcd.print(text1);
       lcd.autoscroll();
-     
-     
-
-      
-     
-     delay(200);
-
-     
-  
-    
+     delay(200); 
      lcd.clear();
     }
   }
-
-
-
-   
  
 delay(200);
 
